@@ -54,29 +54,45 @@ export class GoogleAuthService {
   };
 
   public async signInWithGoogle(): Promise<GoogleAuthResult> {
-    return new Promise((resolve, reject) => {
-      // Store the resolve function to call when deep link is received
-      this.authPromiseResolve = resolve;
-
-      // Redirect to backend Google OAuth endpoint
+    // Check if running on web
+    if (typeof window !== 'undefined' && window.location) {
+      // Web implementation - use direct redirect
       const authUrl = `${process.env.EXPO_PUBLIC_API_URL || 'https://jctop.zeabur.app/api/v1'}/auth/google`;
       
-      Linking.openURL(authUrl).catch((error) => {
-        this.authPromiseResolve = null;
-        reject(new Error(`Failed to open Google sign-in: ${error.message}`));
-      });
+      // Store return URL in sessionStorage for after callback
+      sessionStorage.setItem('authReturnUrl', window.location.pathname);
+      
+      // Redirect to backend OAuth endpoint
+      window.location.href = authUrl;
+      
+      // This promise won't resolve as we're redirecting
+      return new Promise(() => {});
+    } else {
+      // Mobile app implementation - use deep linking
+      return new Promise((resolve, reject) => {
+        // Store the resolve function to call when deep link is received
+        this.authPromiseResolve = resolve;
 
-      // Set a timeout in case the user cancels or something goes wrong
-      setTimeout(() => {
-        if (this.authPromiseResolve) {
-          this.authPromiseResolve({
-            success: false,
-            error: 'Authentication timeout',
-          });
+        // Redirect to backend Google OAuth endpoint
+        const authUrl = `${process.env.EXPO_PUBLIC_API_URL || 'https://jctop.zeabur.app/api/v1'}/auth/google`;
+        
+        Linking.openURL(authUrl).catch((error) => {
           this.authPromiseResolve = null;
-        }
-      }, 300000); // 5 minute timeout
-    });
+          reject(new Error(`Failed to open Google sign-in: ${error.message}`));
+        });
+
+        // Set a timeout in case the user cancels or something goes wrong
+        setTimeout(() => {
+          if (this.authPromiseResolve) {
+            this.authPromiseResolve({
+              success: false,
+              error: 'Authentication timeout',
+            });
+            this.authPromiseResolve = null;
+          }
+        }, 300000); // 5 minute timeout
+      });
+    }
   }
 
   public cleanup(): void {
