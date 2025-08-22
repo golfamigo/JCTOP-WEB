@@ -21,7 +21,8 @@ interface AuthState {
   login: (credentials: LoginData) => Promise<void>;
   logout: () => Promise<void>;
   loadAuthState: () => Promise<void>;
-  setToken: (token: string) => void;
+  setToken: (token: string) => Promise<void>;
+  fetchProfile: () => Promise<User | undefined>;
   isTokenExpired: (token: string) => boolean;
   getProfile: () => Promise<void>;
   updateProfile: (profileData: UpdateProfileData) => Promise<void>;
@@ -135,8 +136,26 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     }
   },
 
-  setToken: (token: string) => {
-    set({ token });
+  setToken: async (token: string) => {
+    try {
+      await AsyncStorage.setItem(TOKEN_KEY, token);
+      set({ token, isAuthenticated: true });
+    } catch (error) {
+      console.error('Error saving token:', error);
+      throw error;
+    }
+  },
+  
+  fetchProfile: async () => {
+    try {
+      const user = await authService.getProfile();
+      await AsyncStorage.setItem(USER_KEY, JSON.stringify(user));
+      set({ user });
+      return user;
+    } catch (error) {
+      console.error('Error fetching profile:', error);
+      throw error;
+    }
   },
 
   // Helper method to validate JWT token expiration
