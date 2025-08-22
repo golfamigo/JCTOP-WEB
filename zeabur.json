@@ -1,7 +1,10 @@
 {
   "build": {
     "command": "npm run build:web",
-    "output": "dist"
+    "output": "web-build"
+  },
+  "start": {
+    "command": "npm start"
   },
   "env": {
     "EXPO_PUBLIC_API_URL": {
@@ -9,6 +12,9 @@
     },
     "NODE_ENV": {
       "default": "production"
+    },
+    "PORT": {
+      "default": "8080"
     }
   }
 }
