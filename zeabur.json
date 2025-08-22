@@ -1,0 +1,14 @@
+{
+  "build": {
+    "command": "npm run build:web",
+    "output": "dist"
+  },
+  "env": {
+    "EXPO_PUBLIC_API_URL": {
+      "default": "https://jctop.zeabur.app/api/v1"
+    },
+    "NODE_ENV": {
+      "default": "production"
+    }
+  }
+}
