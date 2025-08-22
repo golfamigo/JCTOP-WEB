@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, ScrollView, Platform } from 'react-native';
+import { View, StyleSheet, ScrollView, Platform, TouchableOpacity } from 'react-native';
+import { useRouter } from 'expo-router';
 import {
   Text,
   Input,
@@ -38,6 +39,7 @@ const UI_CONSTANTS = {
 
 const ProfilePage = () => {
   const { user, getProfile, updateProfile } = useAuthStore();
+  const router = useRouter();
   const [isEditing, setIsEditing] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isFetching, setIsFetching] = useState(false);
@@ -274,6 +276,25 @@ const ProfilePage = () => {
       fontWeight: '600',
       marginBottom: spacing.xs,
     },
+    linkSection: {
+      marginTop: spacing.md,
+      marginBottom: spacing.md,
+    },
+    linkSectionTitle: {
+      fontSize: 16,
+      fontWeight: '600',
+      marginBottom: spacing.sm,
+      color: colors.dark,
+    },
+    linkText: {
+      fontSize: 15,
+      color: colors.primary,
+      paddingVertical: spacing.sm,
+      paddingHorizontal: spacing.md,
+      backgroundColor: colors.lightGrey,
+      marginBottom: spacing.xs,
+      borderRadius: spacing.xs,
+    },
   });
 
   if (isFetching) {
@@ -425,6 +446,56 @@ const ProfilePage = () => {
             />
           </View>
         )}
+      </Card>
+
+      {/* Quick Access Links - Added to expose hidden features */}
+      <Card containerStyle={styles.card}>
+        <Text style={styles.sectionTitle}>快速功能</Text>
+        
+        {/* Organizer Features */}
+        <View style={styles.linkSection}>
+          <Text style={styles.linkSectionTitle}>活動管理</Text>
+          <TouchableOpacity onPress={() => router.push('/organizer/dashboard')}>
+            <Text style={styles.linkText}>📊 管理者儀表板</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => router.push('/organizer/events/create')}>
+            <Text style={styles.linkText}>➕ 建立新活動</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => router.push('/organizer/events')}>
+            <Text style={styles.linkText}>📝 我的活動</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => router.push('/organizer/discounts')}>
+            <Text style={styles.linkText}>🎟️ 折扣碼管理</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => router.push('/organizer/reports')}>
+            <Text style={styles.linkText}>📈 報表分析</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* Admin Features */}
+        <View style={styles.linkSection}>
+          <Text style={styles.linkSectionTitle}>系統管理</Text>
+          <TouchableOpacity onPress={() => router.push('/admin/dashboard')}>
+            <Text style={styles.linkText}>🎛️ 系統儀表板</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => router.push('/admin/users')}>
+            <Text style={styles.linkText}>👥 使用者管理</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => router.push('/admin/system-health')}>
+            <Text style={styles.linkText}>💚 系統健康狀態</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* User Features */}
+        <View style={styles.linkSection}>
+          <Text style={styles.linkSectionTitle}>其他功能</Text>
+          <TouchableOpacity onPress={() => router.push('/user/tickets')}>
+            <Text style={styles.linkText}>🎫 票券詳細管理</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => router.push('/auth/forgot-password')}>
+            <Text style={styles.linkText}>🔐 忘記密碼</Text>
+          </TouchableOpacity>
+        </View>
       </Card>
     </ScrollView>
     <LoadingOverlay
