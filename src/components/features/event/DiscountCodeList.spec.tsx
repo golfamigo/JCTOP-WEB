@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import DiscountCodeList from './DiscountCodeList';
 import discountCodeService from '../../../services/discountCodeService';
-import { DiscountCodeResponse } from '@jctop-event/shared-types';
+import { DiscountCodeResponse } from '@/types';
 
 // Mock the discount code service
 jest.mock('../../../services/discountCodeService');

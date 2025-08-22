@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ScrollView, View, StyleSheet, Alert, Dimensions, ActivityIndicator, Platform } from 'react-native';
 import { Card, Text, Button, Divider, ListItem, Icon, Badge } from '@rneui/themed';
 import { useTranslation } from 'react-i18next';
-import { Event, RegistrationFormData, PaymentResponse } from '@jctop-event/shared-types';
+import { Event, RegistrationFormData, PaymentResponse } from '@/types';
 import StepIndicator from '../../common/StepIndicator';
 import CreditCardForm, { CreditCardData } from '../../molecules/CreditCardForm';
 import PaymentSkeleton from '../../atoms/PaymentSkeleton';

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet, TouchableOpacity, Alert, Share, Platform } from 'react-native';
 import { Text, Badge, Button, Icon, Overlay } from '@rneui/themed';
 import { MaterialIcons } from '@expo/vector-icons';
-import { DiscountCodeResponse } from '@jctop-event/shared-types';
+import { DiscountCodeResponse } from '@/types';
 import { useAppTheme } from '../../../theme';
 import * as Clipboard from 'expo-clipboard';
 

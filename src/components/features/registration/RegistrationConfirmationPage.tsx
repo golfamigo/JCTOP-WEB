@@ -17,7 +17,7 @@ import {
   Icon,
   Badge,
 } from '@rneui/themed';
-import { Registration } from '@jctop-event/shared-types';
+import { Registration } from '@/types';
 import registrationService from '../../../services/registrationService';
 
 interface RegistrationConfirmationPageProps {

@@ -1,4 +1,4 @@
-import { InvoiceSettings } from '@jctop-event/shared-types';
+import { InvoiceSettings } from '@/types';
 import apiClient from './apiClient';
 
 export interface CreateInvoiceSettingsRequest {

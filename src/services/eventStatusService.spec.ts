@@ -1,6 +1,6 @@
 import eventStatusService from './eventStatusService';
 import apiClient from './apiClient';
-import { UpdateEventStatusDto, EventStatusChangeDto } from '@jctop-event/shared-types';
+import { UpdateEventStatusDto, EventStatusChangeDto } from '@/types';
 
 // Mock the apiClient
 jest.mock('./apiClient');

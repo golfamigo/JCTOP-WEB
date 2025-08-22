@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet, ScrollView, TextInput, Alert } from 'react-native';
 import { Text, Card, Badge, Button, Overlay, Input } from '@rneui/themed';
 import { MaterialIcons } from '@expo/vector-icons';
-import { UpdateEventStatusDto } from '@jctop-event/shared-types';
+import { UpdateEventStatusDto } from '@/types';
 import { useAppTheme } from '../../../theme';
 
 type EventStatus = 'draft' | 'published' | 'unpublished' | 'paused' | 'ended';

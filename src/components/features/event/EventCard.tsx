@@ -3,7 +3,7 @@ import { View, TouchableOpacity, Pressable } from 'react-native';
 import { Card, Text, Button, Icon, Badge } from '@rneui/themed';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
-import { EventWithRelations } from '@jctop-event/shared-types';
+import { EventWithRelations } from '@/types';
 import { useAppTheme } from '@/theme';
 
 interface EventCardProps {

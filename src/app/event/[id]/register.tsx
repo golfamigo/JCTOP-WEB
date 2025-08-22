@@ -3,7 +3,7 @@ import { ScrollView, View, Alert } from 'react-native';
 import { ThemeProvider } from '@rneui/themed';
 import { StatusBar } from 'expo-status-bar';
 import { useRouter, useLocalSearchParams } from 'expo-router';
-import { Event, TicketSelection, RegistrationFormData, PaymentResponse } from '@jctop-event/shared-types';
+import { Event, TicketSelection, RegistrationFormData, PaymentResponse } from '@/types';
 import RegistrationStepOne from '../../../components/features/event/RegistrationStepOne';
 import RegistrationStepTwo from '../../../components/features/event/RegistrationStepTwo';
 import PaymentStep from '../../../components/features/event/PaymentStep';

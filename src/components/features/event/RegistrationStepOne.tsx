@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ScrollView, View, StyleSheet, Alert, Dimensions } from 'react-native';
 import { Card, Text, Button, Divider, Badge, Icon } from '@rneui/themed';
 import { useTranslation } from 'react-i18next';
-import { Event, TicketSelection } from '@jctop-event/shared-types';
+import { Event, TicketSelection } from '@/types';
 import StepIndicator from '../../common/StepIndicator';
 import TicketTypeSelector from './TicketTypeSelector';
 import ticketService from '../../../services/ticketService';

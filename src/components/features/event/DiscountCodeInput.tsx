@@ -4,7 +4,7 @@ import { Input, Button, Text, Icon, Card } from '@rneui/themed';
 import { useTranslation } from 'react-i18next';
 import { useAppTheme } from '@/theme';
 import registrationService from '../../../services/registrationService';
-import { DiscountValidationResponse } from '@jctop-event/shared-types';
+import { DiscountValidationResponse } from '@/types';
 
 interface DiscountCodeInputProps {
   eventId: string;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, ActivityIndicator, Dimensions } from 'react-native';
 import { Text, Card, Badge, Divider, Icon } from '@rneui/themed';
 import { useTranslation } from 'react-i18next';
-import { TicketTypeWithAvailability, TicketSelection } from '@jctop-event/shared-types';
+import { TicketTypeWithAvailability, TicketSelection } from '@/types';
 import TicketQuantityPicker from './TicketQuantityPicker';
 import ticketService from '../../../services/ticketService';
 import { useAppTheme } from '@/theme';

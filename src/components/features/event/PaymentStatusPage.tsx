@@ -3,7 +3,7 @@ import { ScrollView, View, StyleSheet, Alert, Dimensions, ActivityIndicator } fr
 import { Card, Text, Button, Icon, Badge, LinearProgress } from '@rneui/themed';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
-import { PaymentStatusResponse } from '@jctop-event/shared-types';
+import { PaymentStatusResponse } from '@/types';
 import paymentService from '../../../services/paymentService';
 import { useAppTheme } from '@/theme';
 

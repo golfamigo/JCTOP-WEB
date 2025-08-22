@@ -5,7 +5,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useAppTheme } from '@/theme';
 import * as Haptics from 'expo-haptics';
-import type { Registration } from '@shared/types';
+import type { Registration } from '@/types';
 
 interface TicketCardProps {
   registration: Registration;

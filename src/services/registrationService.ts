@@ -1,5 +1,5 @@
 import apiClient from './apiClient';
-import { CustomRegistrationField, CustomFieldResponse, DiscountValidationRequest, DiscountValidationResponse, Registration } from '@jctop-event/shared-types';
+import { CustomRegistrationField, CustomFieldResponse, DiscountValidationRequest, DiscountValidationResponse, Registration } from '@/types';
 
 class RegistrationService {
   async getCustomFields(eventId: string): Promise<CustomRegistrationField[]> {

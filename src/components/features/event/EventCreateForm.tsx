@@ -3,7 +3,7 @@ import { View, ScrollView, Alert, StyleSheet, Platform } from 'react-native';
 import { Button, Input, Text, Card } from '@rneui/themed';
 import { Picker } from '@react-native-picker/picker';
 import DateTimePicker from '@react-native-community/datetimepicker';
-import { CreateEventDto } from '@jctop-event/shared-types';
+import { CreateEventDto } from '@/types';
 import { useAppTheme } from '../../../theme';
 
 interface EventCreateFormProps {

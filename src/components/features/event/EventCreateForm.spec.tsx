@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import EventCreateForm from './EventCreateForm';
 import theme from '@/theme';
-import { CreateEventDto } from '@jctop-event/shared-types';
+import { CreateEventDto } from '@/types';
 
 // Mock toast
 const mockToast = jest.fn();

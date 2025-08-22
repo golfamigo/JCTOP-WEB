@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import { useRouter, useLocalSearchParams, Stack } from 'expo-router';
 import { useTranslation } from 'react-i18next';
-import { EventWithRelations } from '@jctop-event/shared-types';
+import { EventWithRelations } from '@/types';
 
 // Extended Event interface for UI display
 interface EventDetail {

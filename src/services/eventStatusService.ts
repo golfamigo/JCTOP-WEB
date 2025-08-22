@@ -1,5 +1,5 @@
 import apiClient from './apiClient';
-import { UpdateEventStatusDto, EventStatusChangeDto } from '@jctop-event/shared-types';
+import { UpdateEventStatusDto, EventStatusChangeDto } from '@/types';
 
 export interface EventStatusResponse {
   id: string;

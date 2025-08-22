@@ -1,6 +1,6 @@
 import seatingService from './seatingService';
 import apiClient from './apiClient';
-import { CreateSeatingZoneDto, SeatingZone } from '@jctop-event/shared-types';
+import { CreateSeatingZoneDto, SeatingZone } from '@/types';
 
 // Mock the apiClient
 jest.mock('./apiClient');

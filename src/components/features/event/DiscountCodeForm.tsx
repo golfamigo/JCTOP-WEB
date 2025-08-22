@@ -4,7 +4,7 @@ import { Overlay, Button, Text, Input } from '@rneui/themed';
 import { Picker } from '@react-native-picker/picker';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { MaterialIcons } from '@expo/vector-icons';
-import { CreateDiscountCodeDto, UpdateDiscountCodeDto, DiscountCodeResponse } from '@jctop-event/shared-types';
+import { CreateDiscountCodeDto, UpdateDiscountCodeDto, DiscountCodeResponse } from '@/types';
 import { useAppTheme } from '../../../theme';
 
 interface DiscountCodeFormProps {

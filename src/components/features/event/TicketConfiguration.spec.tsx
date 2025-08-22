@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { TicketType } from '@jctop-event/shared-types';
+import { TicketType } from '@/types';
 import TicketConfiguration from './TicketConfiguration';
 
 // Mock useToast (removed since we're not using ChakraUI anymore)

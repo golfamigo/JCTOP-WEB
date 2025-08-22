@@ -1,5 +1,5 @@
 import apiClient from './apiClient';
-import { TicketType, CreateTicketTypeDto, UpdateTicketTypeDto, TicketTypeWithAvailability, TicketSelection, TicketSelectionValidationResponse } from '@jctop-event/shared-types';
+import { TicketType, CreateTicketTypeDto, UpdateTicketTypeDto, TicketTypeWithAvailability, TicketSelection, TicketSelectionValidationResponse } from '@/types';
 
 class TicketService {
   /**

@@ -1,5 +1,5 @@
 import apiClient from './apiClient';
-import { User } from '@jctop-event/shared-types';
+import { User } from '@/types';
 
 interface RegisterData {
   name: string;

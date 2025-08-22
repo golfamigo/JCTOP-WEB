@@ -3,7 +3,7 @@ import { render, screen, fireEvent } from '@testing-library/react-native';
 import { ThemeProvider } from '@rneui/themed';
 import { I18nextProvider } from 'react-i18next';
 import EventCard from './EventCard';
-import { EventWithRelations } from '@jctop-event/shared-types';
+import { EventWithRelations } from '@/types';
 import { theme } from '@/theme';
 import i18n from '../../../localization';
 

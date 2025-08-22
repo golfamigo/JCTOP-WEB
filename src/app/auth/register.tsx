@@ -26,6 +26,9 @@ export default function RegisterPage() {
   const router = useRouter();
   const { isAuthenticated, login } = useAuthStore();
   const { colors, spacing } = useAppTheme();
+  
+  // Create styles early to avoid using before declaration
+  const styles = createStyles(colors, spacing);
 
   // Handle registration request
   const handleRegister = async (userData: { name: string; email: string; password: string }) => {
@@ -61,8 +64,6 @@ export default function RegisterPage() {
       </View>
     );
   }
-
-  const styles = createStyles(colors, spacing);
 
   return (
     <View style={styles.container}>

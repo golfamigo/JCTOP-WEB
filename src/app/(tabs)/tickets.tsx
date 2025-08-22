@@ -7,7 +7,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import registrationService from '@/services/registrationService';
 import { TicketCard } from '@/components/features/user/TicketCard';
 import { QRCodeModal } from '@/components/features/user/QRCodeModal';
-import type { Registration } from '@shared/types';
+import type { Registration } from '@/types';
 
 export default function TicketsScreen() {
   const { t } = useTranslation();

@@ -1,6 +1,6 @@
 import apiClient from './apiClient';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { DiscountCodeResponse, CreateDiscountCodeDto, UpdateDiscountCodeDto } from '@jctop-event/shared-types';
+import { DiscountCodeResponse, CreateDiscountCodeDto, UpdateDiscountCodeDto } from '@/types';
 
 interface CachedData<T> {
   data: T;

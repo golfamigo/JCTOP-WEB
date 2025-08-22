@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { User } from '@jctop-event/shared-types';
+import { User } from '@/types';
 import authService from '../services/authService';
 
 interface LoginData {

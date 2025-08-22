@@ -19,7 +19,7 @@ import {
   Overlay,
 } from '@rneui/themed';
 import { MaterialIcons } from '@expo/vector-icons';
-import { PaymentProvider } from '@jctop-event/shared-types';
+import { PaymentProvider } from '@/types';
 import paymentService from '../../../services/paymentService';
 import PaymentProviderCredentialsForm from '../../../components/features/organizer/PaymentProviderCredentialsForm';
 import { useAppTheme } from '@/theme';

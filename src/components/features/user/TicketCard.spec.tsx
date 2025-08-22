@@ -3,7 +3,7 @@ import { render, fireEvent } from '@testing-library/react-native';
 import { TicketCard } from './TicketCard';
 import { useTranslation } from 'react-i18next';
 import { useAppTheme } from '@/theme';
-import type { Registration } from '@shared/types';
+import type { Registration } from '@/types';
 
 jest.mock('react-i18next');
 jest.mock('@/theme');

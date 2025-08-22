@@ -1,6 +1,6 @@
 import eventService from './eventService';
 import apiClient from './apiClient';
-import { CreateEventDto, Category, Venue, Event, PaginatedEventsResponse, EventWithRelations } from '@jctop-event/shared-types';
+import { CreateEventDto, Category, Venue, Event, PaginatedEventsResponse, EventWithRelations } from '@/types';
 
 // Mock the apiClient
 jest.mock('./apiClient');

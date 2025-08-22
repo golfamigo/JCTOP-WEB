@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import TicketTypeSelector from './TicketTypeSelector';
 import ticketService from '../../../services/ticketService';
-import { TicketTypeWithAvailability } from '@jctop-event/shared-types';
+import { TicketTypeWithAvailability } from '@/types';
 
 // Mock the ticket service
 jest.mock('../../../services/ticketService');

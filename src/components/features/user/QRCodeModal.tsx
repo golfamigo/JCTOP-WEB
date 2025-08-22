@@ -5,7 +5,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import QRCode from 'react-native-qrcode-svg';
 import { useTranslation } from 'react-i18next';
 import { useAppTheme } from '@/theme';
-import type { Registration } from '@shared/types';
+import type { Registration } from '@/types';
 
 interface QRCodeModalProps {
   visible: boolean;

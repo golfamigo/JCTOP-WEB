@@ -8,7 +8,7 @@ import {
   CustomRegistrationField, 
   RegistrationFormData, 
   DiscountValidationResponse 
-} from '@jctop-event/shared-types';
+} from '@/types';
 import StepIndicator from '../../common/StepIndicator';
 import DynamicFieldRenderer from './DynamicFieldRenderer';
 import DiscountCodeInput from './DiscountCodeInput';

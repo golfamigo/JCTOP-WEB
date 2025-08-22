@@ -1,6 +1,6 @@
 import ticketService from './ticketService';
 import apiClient from './apiClient';
-import { CreateTicketTypeDto, UpdateTicketTypeDto, TicketType } from '@jctop-event/shared-types';
+import { CreateTicketTypeDto, UpdateTicketTypeDto, TicketType } from '@/types';
 
 // Mock the apiClient
 jest.mock('./apiClient');

@@ -4,7 +4,7 @@ import { Button, Input, Text, Card, Divider } from '@rneui/themed';
 import { Picker } from '@react-native-picker/picker';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { MaterialIcons } from '@expo/vector-icons';
-import { CreateEventDto, TicketType, SeatingZone } from '@jctop-event/shared-types';
+import { CreateEventDto, TicketType, SeatingZone } from '@/types';
 import { useAppTheme } from '../../../theme';
 import StepIndicator from '../../common/StepIndicator';
 import TicketConfiguration from './TicketConfiguration';

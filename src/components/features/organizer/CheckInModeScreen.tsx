@@ -31,7 +31,7 @@ import { AttendeeSearchResults, AttendeeSearchResult } from './AttendeeSearchRes
 import eventService from '../../../services/eventService';
 import registrationService from '../../../services/registrationService';
 import attendeeSearchService from '../../../services/attendeeSearchService';
-import { Event } from '@jctop-event/shared-types';
+import { Event } from '@/types';
 import statisticsService, { EventStatistics } from '../../../services/statisticsService';
 import { CheckInStatisticsHeader } from './CheckInStatisticsHeader';
 import { useAppTheme } from '@/theme';

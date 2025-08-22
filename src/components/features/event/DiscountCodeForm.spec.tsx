@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import DiscountCodeForm from './DiscountCodeForm';
-import { DiscountCodeResponse } from '@jctop-event/shared-types';
+import { DiscountCodeResponse } from '@/types';
 
 // Mock toast hook
 const mockToast = jest.fn();

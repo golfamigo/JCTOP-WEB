@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { EventReport, InvoiceSettings } from '@jctop-event/shared-types';
+import { EventReport, InvoiceSettings } from '@/types';
 
 interface ReportState {
   // Report data

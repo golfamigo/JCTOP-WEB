@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet, ScrollView, Alert } from 'react-native';
 import { Text, Card, Button, Input, Icon } from '@rneui/themed';
 import { MaterialIcons } from '@expo/vector-icons';
-import { TicketType, CreateTicketTypeDto } from '@jctop-event/shared-types';
+import { TicketType, CreateTicketTypeDto } from '@/types';
 import { useAppTheme } from '../../../theme';
 
 interface TicketConfigurationProps {

@@ -1,5 +1,5 @@
 import apiClient from './apiClient';
-import { Event, CreateEventDto, Category, Venue, TicketType, SeatingZone, PaginatedEventsResponse } from '@jctop-event/shared-types';
+import { Event, CreateEventDto, Category, Venue, TicketType, SeatingZone, PaginatedEventsResponse } from '@/types';
 import ticketService from './ticketService';
 import seatingService from './seatingService';
 

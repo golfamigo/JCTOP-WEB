@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useAppTheme } from '@/theme';
 import { useReportStore } from '../../../stores/reportStore';
 import { InvoiceSettingsModal } from './InvoiceSettingsModal';
-import { InvoiceSettings } from '@jctop-event/shared-types';
+import { InvoiceSettings } from '@/types';
 
 // Mock environment variables
 process.env.EXPO_PUBLIC_API_URL = 'https://jctop.zeabur.app/api/v1';

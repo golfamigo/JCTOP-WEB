@@ -3,7 +3,7 @@ import { render, fireEvent, waitFor } from '@testing-library/react-native';
 import { Alert } from 'react-native';
 import RegistrationStepOne from './RegistrationStepOne';
 import ticketService from '../../../services/ticketService';
-import { Event, TicketSelection } from '@jctop-event/shared-types';
+import { Event, TicketSelection } from '@/types';
 
 // Mock dependencies
 jest.mock('@rneui/themed', () => ({

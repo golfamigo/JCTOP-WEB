@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import EventsList from './EventsList';
 import eventService from '../../../services/eventService';
-import { PaginatedEventsResponse, EventWithRelations } from '@jctop-event/shared-types';
+import { PaginatedEventsResponse, EventWithRelations } from '@/types';
 
 // Mock the eventService
 jest.mock('../../../services/eventService');

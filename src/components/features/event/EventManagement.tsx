@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, ScrollView, ActivityIndicator, Alert } from 'react-native';
 import { Text, Card, Badge, Button, Tab, TabView, Icon } from '@rneui/themed';
 import { MaterialIcons } from '@expo/vector-icons';
-import { Event } from '@jctop-event/shared-types';
+import { Event } from '@/types';
 import eventService from '../../../services/eventService';
 import DiscountCodeList from './DiscountCodeList';
 import TicketConfiguration from './TicketConfiguration';

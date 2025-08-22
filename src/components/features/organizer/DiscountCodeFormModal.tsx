@@ -5,7 +5,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useAppTheme } from '@/theme';
 import discountCodeService from '@/services/discountCodeService';
-import { DiscountCodeResponse as BaseDiscountCodeResponse, CreateDiscountCodeDto, UpdateDiscountCodeDto } from '@jctop-event/shared-types';
+import { DiscountCodeResponse as BaseDiscountCodeResponse, CreateDiscountCodeDto, UpdateDiscountCodeDto } from '@/types';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import * as Clipboard from 'expo-clipboard';
 

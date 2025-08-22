@@ -23,7 +23,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import attendeeService, { AttendeeDto, AttendeeListResponse } from '../../../services/attendeeService';
 import eventService from '../../../services/eventService';
-import { Event } from '@jctop-event/shared-types';
+import { Event } from '@/types';
 import { useAppTheme } from '@/theme';
 
 interface AttendeeManagementPageProps {

@@ -3,7 +3,7 @@ import { render, fireEvent, waitFor } from '@testing-library/react-native';
 import { Alert } from 'react-native';
 import PaymentStep from './PaymentStep';
 import paymentService from '../../../services/paymentService';
-import { Event, RegistrationFormData, PaymentResponse } from '@jctop-event/shared-types';
+import { Event, RegistrationFormData, PaymentResponse } from '@/types';
 
 // Mock expo-linking
 const mockLinking = {

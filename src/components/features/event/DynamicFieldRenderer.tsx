@@ -3,7 +3,7 @@ import { View, StyleSheet, TextInput, ScrollView, TouchableOpacity, Switch } fro
 import { Input, Text, CheckBox, Icon } from '@rneui/themed';
 import { Picker } from '@react-native-picker/picker';
 import { useAppTheme } from '@/theme';
-import { CustomRegistrationField } from '@jctop-event/shared-types';
+import { CustomRegistrationField } from '@/types';
 
 interface DynamicFieldRendererProps {
   field: CustomRegistrationField;

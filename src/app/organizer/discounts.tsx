@@ -6,7 +6,7 @@ import { useAppTheme } from '@/theme';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import discountCodeService from '@/services/discountCodeService';
-import { DiscountCodeResponse as BaseDiscountCodeResponse } from '@jctop-event/shared-types';
+import { DiscountCodeResponse as BaseDiscountCodeResponse } from '@/types';
 import DiscountCodeManagementList from '@/components/features/organizer/DiscountCodeManagementList';
 import DiscountCodeFormModal from '@/components/features/organizer/DiscountCodeFormModal';
 import DiscountCodeStatistics from '@/components/features/organizer/DiscountCodeStatistics';

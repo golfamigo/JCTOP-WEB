@@ -14,7 +14,7 @@ import {
 } from '@rneui/themed';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
-import { InvoiceSettings } from '@jctop-event/shared-types';
+import { InvoiceSettings } from '@/types';
 import { useReportStore } from '../../../stores/reportStore';
 import invoiceService, { CreateInvoiceSettingsRequest } from '../../../services/invoiceService';
 import { useAppTheme } from '@/theme';

@@ -1,7 +1,7 @@
 import discountCodeService from './discountCodeService';
 import apiClient from './apiClient';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { CreateDiscountCodeDto, UpdateDiscountCodeDto, DiscountCodeResponse } from '@jctop-event/shared-types';
+import { CreateDiscountCodeDto, UpdateDiscountCodeDto, DiscountCodeResponse } from '@/types';
 
 // Mock the API client and AsyncStorage
 jest.mock('./apiClient');

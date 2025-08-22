@@ -1,5 +1,5 @@
 import apiClient from './apiClient';
-import { SeatingZone, CreateSeatingZoneDto } from '@jctop-event/shared-types';
+import { SeatingZone, CreateSeatingZoneDto } from '@/types';
 
 class SeatingService {
   /**

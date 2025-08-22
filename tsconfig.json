@@ -7,11 +7,8 @@
       "@/*": [
         "./src/*"
       ],
-      "@shared/types": [
-        "../../packages/shared-types/src/index"
-      ],
-      "@jctop-event/shared-types": [
-        "../../packages/shared-types/src/index"
+      "@/types": [
+        "./src/types/index"
       ]
     }
   },
@@ -32,6 +29,9 @@
     "coverage",
     "jest.config.js",
     "jest-setup.ts",
-    "jest-setup-web.ts"
+    "jest-setup-web.ts",
+    "src/test-utils/**/*",
+    "src/utils/errorTestUtils.ts",
+    "__mocks__/**/*"
   ]
 }

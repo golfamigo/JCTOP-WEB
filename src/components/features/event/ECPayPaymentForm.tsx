@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, ScrollView, ActivityIndicator, Alert, StyleSheet, TouchableOpacity } from 'react-native';
 import { Button, Text, Card, Badge, Icon, Divider } from '@rneui/themed';
 import { MaterialIcons } from '@expo/vector-icons';
-import { PaymentResponse, PaymentStatusResponse } from '@jctop-event/shared-types';
+import { PaymentResponse, PaymentStatusResponse } from '@/types';
 import paymentService from '../../../services/paymentService';
 import { useAppTheme } from '../../../theme';
 

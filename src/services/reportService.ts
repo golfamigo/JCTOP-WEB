@@ -1,4 +1,4 @@
-import { EventReport } from '@jctop-event/shared-types';
+import { EventReport } from '@/types';
 import apiClient from './apiClient';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Platform } from 'react-native';

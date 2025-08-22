@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import DynamicFieldRenderer from './DynamicFieldRenderer';
-import { CustomRegistrationField } from '@jctop-event/shared-types';
+import { CustomRegistrationField } from '@/types';
 
 const renderWithChakra = (component: React.ReactElement) => {
   return render(<ChakraProvider>{component}</ChakraProvider>);

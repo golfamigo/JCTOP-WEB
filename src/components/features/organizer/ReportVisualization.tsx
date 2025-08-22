@@ -2,7 +2,7 @@ import React from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 import { Card, Text, Divider, Icon } from '@rneui/themed';
 import { MaterialIcons } from '@expo/vector-icons';
-import { EventReport } from '@jctop-event/shared-types';
+import { EventReport } from '@/types';
 import { useAppTheme } from '../../../theme';
 
 interface ReportVisualizationProps {

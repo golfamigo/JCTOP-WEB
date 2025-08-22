@@ -4,7 +4,7 @@ import { Card, Text } from '@rneui/themed';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useAppTheme } from '@/theme';
-import { DiscountCodeResponse as BaseDiscountCodeResponse } from '@jctop-event/shared-types';
+import { DiscountCodeResponse as BaseDiscountCodeResponse } from '@/types';
 
 interface DiscountCodeResponse extends BaseDiscountCodeResponse {
   status?: 'active' | 'inactive';

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, ScrollView, ActivityIndicator, Alert, RefreshControl } from 'react-native';
 import { Button, Text, Card, Icon } from '@rneui/themed';
 import { MaterialIcons } from '@expo/vector-icons';
-import { DiscountCodeResponse, CreateDiscountCodeDto, UpdateDiscountCodeDto } from '@jctop-event/shared-types';
+import { DiscountCodeResponse, CreateDiscountCodeDto, UpdateDiscountCodeDto } from '@/types';
 import discountCodeService from '../../../services/discountCodeService';
 import DiscountCodeForm from './DiscountCodeForm';
 import DiscountCodeCard from './DiscountCodeCard';

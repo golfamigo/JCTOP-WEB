@@ -22,7 +22,7 @@ import {
   ButtonGroup,
   Overlay,
 } from '@rneui/themed';
-import { Registration } from '@jctop-event/shared-types';
+import { Registration } from '@/types';
 import registrationService from '../../../services/registrationService';
 import { QRCodeModal } from './QRCodeModal';
 import { useAppTheme } from '../../../theme';

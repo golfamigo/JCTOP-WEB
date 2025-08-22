@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet, ScrollView, Alert, TextInput } from 'react-native';
 import { Text, Card, Button, Input, Icon, Divider } from '@rneui/themed';
 import { MaterialIcons } from '@expo/vector-icons';
-import { SeatingZone, CreateSeatingZoneDto } from '@jctop-event/shared-types';
+import { SeatingZone, CreateSeatingZoneDto } from '@/types';
 import { useAppTheme } from '../../../theme';
 
 interface SeatingConfigurationProps {

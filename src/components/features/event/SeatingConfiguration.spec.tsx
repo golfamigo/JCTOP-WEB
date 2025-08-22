@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { SeatingZone } from '@jctop-event/shared-types';
+import { SeatingZone } from '@/types';
 import SeatingConfiguration from './SeatingConfiguration';
 
 // Mock useToast (removed since we're not using ChakraUI anymore)

@@ -4,7 +4,7 @@ import { ListItem, Text, Switch, Badge, Skeleton, Button, ButtonGroup } from '@r
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { useAppTheme } from '@/theme';
-import { DiscountCodeResponse as BaseDiscountCodeResponse } from '@jctop-event/shared-types';
+import { DiscountCodeResponse as BaseDiscountCodeResponse } from '@/types';
 import { format } from 'date-fns';
 import { zhTW } from 'date-fns/locale';
 

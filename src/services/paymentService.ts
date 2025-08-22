@@ -5,7 +5,7 @@ import {
   PaymentProviderDto,
   UpdatePaymentProviderDto,
   PaymentProvider
-} from '@jctop-event/shared-types';
+} from '@/types';
 import apiClient from './apiClient';
 
 class PaymentService {

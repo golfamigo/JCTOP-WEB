@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import EventCard from './EventCard';
 import EmptyState from '../../shared/EmptyState';
 import eventService from '../../../services/eventService';
-import { EventWithRelations, PaginatedEventsResponse } from '@jctop-event/shared-types';
+import { EventWithRelations, PaginatedEventsResponse } from '@/types';
 import { useAppTheme } from '@/theme';
 import { useDebounce } from '../../../hooks/useDebounce';
 import { useResponsive } from '../../../hooks/useResponsive';

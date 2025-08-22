@@ -13,7 +13,7 @@ import {
 } from '@rneui/themed';
 import { View, ScrollView, Alert, StyleSheet, Platform } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-import { PaymentProvider, PaymentProviderDto, UpdatePaymentProviderDto } from '@jctop-event/shared-types';
+import { PaymentProvider, PaymentProviderDto, UpdatePaymentProviderDto } from '@/types';
 import paymentService from '../../../services/paymentService';
 
 interface PaymentProviderCredentialsFormProps {
